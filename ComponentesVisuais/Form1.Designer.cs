@@ -39,6 +39,10 @@ namespace ComponentesVisuais
             this.open = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.close = new System.Windows.Forms.ToolStripMenuItem();
+            this.copy = new System.Windows.Forms.ToolStripMenuItem();
+            this.paste = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajuda = new System.Windows.Forms.ToolStripMenuItem();
+            this.about = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,12 +73,18 @@ namespace ComponentesVisuais
             // 
             // edit
             // 
+            this.edit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copy,
+            this.paste});
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(39, 23);
             this.edit.Text = "Edit";
             // 
             // help
             // 
+            this.help.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajuda,
+            this.about});
             this.help.Name = "help";
             this.help.Size = new System.Drawing.Size(44, 23);
             this.help.Text = "Help";
@@ -117,6 +127,30 @@ namespace ComponentesVisuais
             this.close.Size = new System.Drawing.Size(112, 22);
             this.close.Text = "Close";
             // 
+            // copy
+            // 
+            this.copy.Name = "copy";
+            this.copy.Size = new System.Drawing.Size(102, 22);
+            this.copy.Text = "Copy";
+            // 
+            // paste
+            // 
+            this.paste.Name = "paste";
+            this.paste.Size = new System.Drawing.Size(102, 22);
+            this.paste.Text = "Paste";
+            // 
+            // ajuda
+            // 
+            this.ajuda.Name = "ajuda";
+            this.ajuda.Size = new System.Drawing.Size(107, 22);
+            this.ajuda.Text = "Help";
+            // 
+            // about
+            // 
+            this.about.Name = "about";
+            this.about.Size = new System.Drawing.Size(107, 22);
+            this.about.Text = "About";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +180,10 @@ namespace ComponentesVisuais
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem close;
         private System.Windows.Forms.ToolStripMenuItem saveus;
+        private System.Windows.Forms.ToolStripMenuItem copy;
+        private System.Windows.Forms.ToolStripMenuItem paste;
+        private System.Windows.Forms.ToolStripMenuItem ajuda;
+        private System.Windows.Forms.ToolStripMenuItem about;
     }
 }
 
