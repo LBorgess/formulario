@@ -43,6 +43,7 @@ namespace ComponentesVisuais
             this.paste = new System.Windows.Forms.ToolStripMenuItem();
             this.ajuda = new System.Windows.Forms.ToolStripMenuItem();
             this.about = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,8 @@ namespace ComponentesVisuais
             this.file,
             this.edit,
             this.help,
-            this.toolStripComboBox1});
+            this.toolStripComboBox1,
+            this.toolStripTextBox1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 27);
@@ -151,6 +153,12 @@ namespace ComponentesVisuais
             this.about.Size = new System.Drawing.Size(107, 22);
             this.about.Text = "About";
             // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(250, 23);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,6 +192,7 @@ namespace ComponentesVisuais
         private System.Windows.Forms.ToolStripMenuItem paste;
         private System.Windows.Forms.ToolStripMenuItem ajuda;
         private System.Windows.Forms.ToolStripMenuItem about;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }
 
