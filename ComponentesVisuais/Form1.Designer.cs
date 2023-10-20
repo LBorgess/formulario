@@ -71,7 +71,7 @@ namespace ComponentesVisuais
             this.close});
             this.file.Name = "file";
             this.file.Size = new System.Drawing.Size(37, 23);
-            this.file.Text = "File";
+            this.file.Text = "&File";
             // 
             // edit
             // 
@@ -80,7 +80,7 @@ namespace ComponentesVisuais
             this.paste});
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(39, 23);
-            this.edit.Text = "Edit";
+            this.edit.Text = "&Edit";
             // 
             // help
             // 
@@ -89,7 +89,7 @@ namespace ComponentesVisuais
             this.about});
             this.help.Name = "help";
             this.help.Size = new System.Drawing.Size(44, 23);
-            this.help.Text = "Help";
+            this.help.Text = "&Help";
             // 
             // toolStripComboBox1
             // 
@@ -104,19 +104,19 @@ namespace ComponentesVisuais
             // 
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(112, 22);
-            this.save.Text = "Save";
+            this.save.Text = "&Save";
             // 
             // saveus
             // 
             this.saveus.Name = "saveus";
             this.saveus.Size = new System.Drawing.Size(112, 22);
-            this.saveus.Text = "Save as";
+            this.saveus.Text = "S&ave as";
             // 
             // open
             // 
             this.open.Name = "open";
             this.open.Size = new System.Drawing.Size(112, 22);
-            this.open.Text = "Open";
+            this.open.Text = "&Open";
             // 
             // toolStripSeparator1
             // 
@@ -127,31 +127,31 @@ namespace ComponentesVisuais
             // 
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(112, 22);
-            this.close.Text = "Close";
+            this.close.Text = "&Close";
             // 
             // copy
             // 
             this.copy.Name = "copy";
             this.copy.Size = new System.Drawing.Size(102, 22);
-            this.copy.Text = "Copy";
+            this.copy.Text = "&Copy";
             // 
             // paste
             // 
             this.paste.Name = "paste";
             this.paste.Size = new System.Drawing.Size(102, 22);
-            this.paste.Text = "Paste";
+            this.paste.Text = "&Paste";
             // 
             // ajuda
             // 
             this.ajuda.Name = "ajuda";
             this.ajuda.Size = new System.Drawing.Size(107, 22);
-            this.ajuda.Text = "Help";
+            this.ajuda.Text = "&Help";
             // 
             // about
             // 
             this.about.Name = "about";
             this.about.Size = new System.Drawing.Size(107, 22);
-            this.about.Text = "About";
+            this.about.Text = "&About";
             // 
             // toolStripTextBox1
             // 
