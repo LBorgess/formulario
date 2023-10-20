@@ -16,5 +16,11 @@ namespace ComponentesVisuais
         {
             InitializeComponent();
         }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Save file...", "Information",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

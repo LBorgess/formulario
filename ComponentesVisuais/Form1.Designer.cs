@@ -103,8 +103,9 @@ namespace ComponentesVisuais
             // save
             // 
             this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(112, 22);
+            this.save.Size = new System.Drawing.Size(180, 22);
             this.save.Text = "&Save";
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // saveus
             // 
