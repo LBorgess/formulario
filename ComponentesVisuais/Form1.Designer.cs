@@ -30,24 +30,24 @@ namespace ComponentesVisuais
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.file = new System.Windows.Forms.ToolStripMenuItem();
+            this.edit = new System.Windows.Forms.ToolStripMenuItem();
+            this.help = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.save = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveus = new System.Windows.Forms.ToolStripMenuItem();
+            this.open = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.close = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
+            this.file,
+            this.edit,
+            this.help,
             this.toolStripComboBox1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -55,29 +55,29 @@ namespace ComponentesVisuais
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menu";
             // 
-            // toolStripMenuItem1
+            // file
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem6,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
+            this.file.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.open,
+            this.save,
+            this.saveus,
             this.toolStripSeparator1,
-            this.toolStripMenuItem7});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 23);
-            this.toolStripMenuItem1.Text = "File";
+            this.close});
+            this.file.Name = "file";
+            this.file.Size = new System.Drawing.Size(37, 23);
+            this.file.Text = "File";
             // 
-            // toolStripMenuItem2
+            // edit
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(39, 23);
-            this.toolStripMenuItem2.Text = "Edit";
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(39, 23);
+            this.edit.Text = "Edit";
             // 
-            // toolStripMenuItem3
+            // help
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(44, 23);
-            this.toolStripMenuItem3.Text = "Help";
+            this.help.Name = "help";
+            this.help.Size = new System.Drawing.Size(44, 23);
+            this.help.Text = "Help";
             // 
             // toolStripComboBox1
             // 
@@ -88,34 +88,34 @@ namespace ComponentesVisuais
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(121, 23);
             // 
-            // toolStripMenuItem4
+            // save
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(112, 22);
-            this.toolStripMenuItem4.Text = "Save";
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(112, 22);
+            this.save.Text = "Save";
             // 
-            // toolStripMenuItem5
+            // saveus
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(112, 22);
-            this.toolStripMenuItem5.Text = "Save as";
+            this.saveus.Name = "saveus";
+            this.saveus.Size = new System.Drawing.Size(112, 22);
+            this.saveus.Text = "Save as";
             // 
-            // toolStripMenuItem6
+            // open
             // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(112, 22);
-            this.toolStripMenuItem6.Text = "Open";
+            this.open.Name = "open";
+            this.open.Size = new System.Drawing.Size(112, 22);
+            this.open.Text = "Open";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(109, 6);
             // 
-            // toolStripMenuItem7
+            // close
             // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(112, 22);
-            this.toolStripMenuItem7.Text = "Close";
+            this.close.Name = "close";
+            this.close.Size = new System.Drawing.Size(112, 22);
+            this.close.Text = "Close";
             // 
             // Form1
             // 
@@ -137,15 +137,15 @@ namespace ComponentesVisuais
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem file;
+        private System.Windows.Forms.ToolStripMenuItem edit;
+        private System.Windows.Forms.ToolStripMenuItem help;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem open;
+        private System.Windows.Forms.ToolStripMenuItem save;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem close;
+        private System.Windows.Forms.ToolStripMenuItem saveus;
     }
 }
 
