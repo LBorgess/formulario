@@ -86,6 +86,7 @@ namespace Calculadora
             this.btnsomar.TabIndex = 5;
             this.btnsomar.Text = "+";
             this.btnsomar.UseVisualStyleBackColor = true;
+            this.btnsomar.Click += new System.EventHandler(this.btnsomar_Click);
             // 
             // btnsubtrair
             // 

@@ -21,5 +21,13 @@ namespace Calculadora
         {
 
         }
+
+        private void btnsomar_Click(object sender, EventArgs e)
+        {
+            double n1 = Convert.ToDouble(txtn1.Text);
+            double n2 = Convert.ToDouble(txtn2.Text);
+            double resultado = n1 + n2;
+            lblresultado.Text = resultado.ToString("F2");
+        }
     }
 }
