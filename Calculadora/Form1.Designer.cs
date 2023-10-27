@@ -34,6 +34,8 @@ namespace Calculadora
             // 
             // textBox1
             // 
+            this.textBox1.AcceptsReturn = true;
+            this.textBox1.AcceptsTab = true;
             this.textBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "Amazonas",
             "Bahia",
@@ -44,9 +46,10 @@ namespace Calculadora
             "Belo Horizonte"});
             this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.textBox1.Location = new System.Drawing.Point(184, 54);
+            this.textBox1.Location = new System.Drawing.Point(172, 65);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(408, 20);
+            this.textBox1.Size = new System.Drawing.Size(408, 277);
             this.textBox1.TabIndex = 0;
             // 
             // Form1
