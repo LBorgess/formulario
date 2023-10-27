@@ -16,5 +16,10 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void lblresultado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
