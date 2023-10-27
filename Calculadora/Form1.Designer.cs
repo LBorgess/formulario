@@ -38,23 +38,26 @@ namespace Calculadora
             this.btnmultiplicar = new System.Windows.Forms.Button();
             this.btndivisao = new System.Windows.Forms.Button();
             this.lblresultado = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(258, 95);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(241, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "1º NUM";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(502, 95);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(485, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "2º NUM";
             // 
@@ -74,36 +77,41 @@ namespace Calculadora
             // 
             // btnsomar
             // 
-            this.btnsomar.Location = new System.Drawing.Point(252, 216);
+            this.btnsomar.AutoSize = true;
+            this.btnsomar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsomar.Location = new System.Drawing.Point(252, 187);
             this.btnsomar.Name = "btnsomar";
-            this.btnsomar.Size = new System.Drawing.Size(75, 23);
+            this.btnsomar.Size = new System.Drawing.Size(75, 41);
             this.btnsomar.TabIndex = 5;
             this.btnsomar.Text = "+";
             this.btnsomar.UseVisualStyleBackColor = true;
             // 
             // btnsubtrair
             // 
+            this.btnsubtrair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubtrair.Location = new System.Drawing.Point(252, 265);
             this.btnsubtrair.Name = "btnsubtrair";
-            this.btnsubtrair.Size = new System.Drawing.Size(75, 23);
+            this.btnsubtrair.Size = new System.Drawing.Size(75, 42);
             this.btnsubtrair.TabIndex = 6;
             this.btnsubtrair.Text = "-";
             this.btnsubtrair.UseVisualStyleBackColor = true;
             // 
             // btnmultiplicar
             // 
-            this.btnmultiplicar.Location = new System.Drawing.Point(490, 216);
+            this.btnmultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmultiplicar.Location = new System.Drawing.Point(490, 187);
             this.btnmultiplicar.Name = "btnmultiplicar";
-            this.btnmultiplicar.Size = new System.Drawing.Size(75, 23);
+            this.btnmultiplicar.Size = new System.Drawing.Size(75, 41);
             this.btnmultiplicar.TabIndex = 7;
             this.btnmultiplicar.Text = "x";
             this.btnmultiplicar.UseVisualStyleBackColor = true;
             // 
             // btndivisao
             // 
+            this.btndivisao.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndivisao.Location = new System.Drawing.Point(490, 265);
             this.btndivisao.Name = "btndivisao";
-            this.btndivisao.Size = new System.Drawing.Size(75, 23);
+            this.btndivisao.Size = new System.Drawing.Size(75, 42);
             this.btndivisao.TabIndex = 8;
             this.btndivisao.Text = "/";
             this.btndivisao.UseVisualStyleBackColor = true;
@@ -111,17 +119,29 @@ namespace Calculadora
             // lblresultado
             // 
             this.lblresultado.AutoSize = true;
-            this.lblresultado.Location = new System.Drawing.Point(386, 352);
+            this.lblresultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblresultado.Location = new System.Drawing.Point(364, 365);
             this.lblresultado.Name = "lblresultado";
-            this.lblresultado.Size = new System.Drawing.Size(35, 13);
+            this.lblresultado.Size = new System.Drawing.Size(70, 25);
             this.lblresultado.TabIndex = 9;
             this.lblresultado.Text = "label3";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(283, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(230, 31);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "CALCULADORA";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblresultado);
             this.Controls.Add(this.btndivisao);
             this.Controls.Add(this.btnmultiplicar);
@@ -132,7 +152,7 @@ namespace Calculadora
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,6 +169,7 @@ namespace Calculadora
         private System.Windows.Forms.Button btnmultiplicar;
         private System.Windows.Forms.Button btndivisao;
         private System.Windows.Forms.Label lblresultado;
+        private System.Windows.Forms.Label label3;
     }
 }
 
