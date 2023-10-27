@@ -50,8 +50,16 @@ namespace Calculadora
         {
             double n1 = Convert.ToDouble(txtn1.Text);
             double n2 = Convert.ToDouble(txtn2.Text);
-            double resultado = n1 / n2;
-            lblresultado.Text = "Erro";
+
+            if (n1 == 0 || n2 == 0)
+            {
+                lblresultado.Text = "Impossível calcular";
+            }
+            else
+            {
+                double resultado = n1 / n2;
+                lblresultado.Text = resultado.ToString("F2");
+            }
         }
     }
 }
