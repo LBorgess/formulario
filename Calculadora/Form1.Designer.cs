@@ -97,6 +97,7 @@ namespace Calculadora
             this.btnsubtrair.TabIndex = 6;
             this.btnsubtrair.Text = "-";
             this.btnsubtrair.UseVisualStyleBackColor = true;
+            this.btnsubtrair.Click += new System.EventHandler(this.btnsubtrair_Click);
             // 
             // btnmultiplicar
             // 
@@ -107,6 +108,7 @@ namespace Calculadora
             this.btnmultiplicar.TabIndex = 7;
             this.btnmultiplicar.Text = "x";
             this.btnmultiplicar.UseVisualStyleBackColor = true;
+            this.btnmultiplicar.Click += new System.EventHandler(this.btnmultiplicar_Click);
             // 
             // btndivisao
             // 
@@ -117,12 +119,13 @@ namespace Calculadora
             this.btndivisao.TabIndex = 8;
             this.btndivisao.Text = "/";
             this.btndivisao.UseVisualStyleBackColor = true;
+            this.btndivisao.Click += new System.EventHandler(this.btndivisao_Click);
             // 
             // lblresultado
             // 
             this.lblresultado.AutoSize = true;
             this.lblresultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresultado.Location = new System.Drawing.Point(400, 373);
+            this.lblresultado.Location = new System.Drawing.Point(377, 371);
             this.lblresultado.Name = "lblresultado";
             this.lblresultado.Size = new System.Drawing.Size(24, 25);
             this.lblresultado.TabIndex = 9;
