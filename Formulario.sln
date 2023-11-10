@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentesVisuais", "Compo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{6AC196E3-B318-4E41-A5E0-B1CDCDEBEE08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovoFormulário", "NovoFormulário\NovoFormulário.csproj", "{B9D383D0-197C-43A3-A0A5-522852BFEDB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6AC196E3-B318-4E41-A5E0-B1CDCDEBEE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AC196E3-B318-4E41-A5E0-B1CDCDEBEE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AC196E3-B318-4E41-A5E0-B1CDCDEBEE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D383D0-197C-43A3-A0A5-522852BFEDB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D383D0-197C-43A3-A0A5-522852BFEDB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D383D0-197C-43A3-A0A5-522852BFEDB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D383D0-197C-43A3-A0A5-522852BFEDB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
