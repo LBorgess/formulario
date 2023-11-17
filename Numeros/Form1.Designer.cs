@@ -89,6 +89,7 @@ namespace Numeros
             this.btn.TabIndex = 3;
             this.btn.Text = "Comparar";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // label3
             // 
