@@ -22,7 +22,7 @@ namespace NovoFormulário
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Deseja enviar os dados?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
 
         public void inicializaCampos()
