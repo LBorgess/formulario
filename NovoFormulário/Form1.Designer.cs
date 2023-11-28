@@ -29,11 +29,13 @@ namespace NovoFormulário
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbNomeCompleto = new System.Windows.Forms.Label();
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
             this.mCPF = new System.Windows.Forms.MaskedTextBox();
             this.cbxEstado = new System.Windows.Forms.ComboBox();
+            this.estadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblEstado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -42,6 +44,7 @@ namespace NovoFormulário
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -85,6 +88,7 @@ namespace NovoFormulário
             // 
             // cbxEstado
             // 
+            this.cbxEstado.DataSource = this.estadoBindingSource;
             this.cbxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxEstado.FormattingEnabled = true;
             this.cbxEstado.Location = new System.Drawing.Point(34, 200);
@@ -92,6 +96,10 @@ namespace NovoFormulário
             this.cbxEstado.Size = new System.Drawing.Size(402, 28);
             this.cbxEstado.TabIndex = 4;
             this.cbxEstado.SelectedIndexChanged += new System.EventHandler(this.cbxEstado_SelectedIndexChanged);
+            // 
+            // estadoBindingSource
+            // 
+            this.estadoBindingSource.DataSource = typeof(NovoFormulário.Estado);
             // 
             // lblEstado
             // 
@@ -195,6 +203,8 @@ namespace NovoFormulário
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.estadoBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -218,6 +228,7 @@ namespace NovoFormulário
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.BindingSource estadoBindingSource;
     }
 }
 

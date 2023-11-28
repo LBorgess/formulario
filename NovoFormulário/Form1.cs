@@ -34,17 +34,26 @@ namespace NovoFormulário
 
         public void populaEstados()
         {
+            estados.Add(new Estado("", ""));
             estados.Add(new Estado("ES", "Espirito Santo"));
-            estados.Add(new Estado("ES", "Espirito Santo"));
+            estados.Add(new Estado("BA", "Bahia"));
             estados.Add(new Estado("SP", "São Paulo"));
-            estados.Add(new Estado("ES", "Espirito Santo"));
+            estados.Add(new Estado("BH", "Belo Horizonte"));
             estados.Add(new Estado("RJ", "Rio de Janeiro"));
-            estados.Add(new Estado("ES", "Espirito Santo"));
+            estados.Add(new Estado("MA", "Maranhão"));
         }
 
         private void cbxEstado_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("Deseja realmente sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }
