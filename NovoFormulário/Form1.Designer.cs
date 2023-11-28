@@ -33,12 +33,12 @@ namespace NovoFormulário
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
             this.mCPF = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbEstados = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,11 +83,11 @@ namespace NovoFormulário
             this.mCPF.Size = new System.Drawing.Size(403, 26);
             this.mCPF.TabIndex = 3;
             // 
-            // comboBox1
+            // cbEstados
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbEstados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstados.FormattingEnabled = true;
+            this.cbEstados.Items.AddRange(new object[] {
             "Acre",
             "Alagoas\t",
             "Amapá\t",
@@ -114,10 +114,10 @@ namespace NovoFormulário
             "São Paulo\t",
             "Sergipe\t",
             "Tocantins"});
-            this.comboBox1.Location = new System.Drawing.Point(34, 200);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(402, 28);
-            this.comboBox1.TabIndex = 4;
+            this.cbEstados.Location = new System.Drawing.Point(34, 200);
+            this.cbEstados.Name = "cbEstados";
+            this.cbEstados.Size = new System.Drawing.Size(402, 28);
+            this.cbEstados.TabIndex = 4;
             // 
             // lblEstado
             // 
@@ -142,16 +142,16 @@ namespace NovoFormulário
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Estado Civil";
             // 
-            // radioButton1
+            // radioButton3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 34);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 22);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Solteiro";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(277, 34);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(61, 22);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Viúva";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -164,16 +164,16 @@ namespace NovoFormulário
             this.radioButton2.Text = "Casado";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(277, 34);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(61, 22);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Viúva";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(15, 34);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(77, 22);
+            this.radioButton1.TabIndex = 0;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Solteiro";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -213,7 +213,7 @@ namespace NovoFormulário
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbEstados);
             this.Controls.Add(this.mCPF);
             this.Controls.Add(this.lblCPF);
             this.Controls.Add(this.txtNomeCompleto);
@@ -235,7 +235,7 @@ namespace NovoFormulário
         private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.MaskedTextBox mCPF;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbEstados;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton3;
