@@ -33,7 +33,7 @@ namespace NovoFormulário
             this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.lblCPF = new System.Windows.Forms.Label();
             this.mCPF = new System.Windows.Forms.MaskedTextBox();
-            this.cbEstados = new System.Windows.Forms.ComboBox();
+            this.cbxEstado = new System.Windows.Forms.ComboBox();
             this.lblEstado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -83,41 +83,15 @@ namespace NovoFormulário
             this.mCPF.Size = new System.Drawing.Size(403, 26);
             this.mCPF.TabIndex = 3;
             // 
-            // cbEstados
+            // cbxEstado
             // 
-            this.cbEstados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEstados.FormattingEnabled = true;
-            this.cbEstados.Items.AddRange(new object[] {
-            "Acre",
-            "Alagoas\t",
-            "Amapá\t",
-            "Amazonas\t",
-            "Bahia\t",
-            "Ceará\t",
-            "Espírito Santo\t",
-            "Goiás\t",
-            "Maranhão",
-            "Mato Grosso\t",
-            "Mato Grosso do Sul",
-            "Minas Gerais",
-            "Pará\t",
-            "Paraíba\t",
-            "Paraná\t",
-            "Pernambuco\t",
-            "Piauí\t",
-            "Rio de Janeiro",
-            "Rio Grande do Norte\t",
-            "Rio Grande do Sul",
-            "Rondônia",
-            "Roraima",
-            "Santa Catarina\t",
-            "São Paulo\t",
-            "Sergipe\t",
-            "Tocantins"});
-            this.cbEstados.Location = new System.Drawing.Point(34, 200);
-            this.cbEstados.Name = "cbEstados";
-            this.cbEstados.Size = new System.Drawing.Size(402, 28);
-            this.cbEstados.TabIndex = 4;
+            this.cbxEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxEstado.FormattingEnabled = true;
+            this.cbxEstado.Location = new System.Drawing.Point(34, 200);
+            this.cbxEstado.Name = "cbxEstado";
+            this.cbxEstado.Size = new System.Drawing.Size(402, 28);
+            this.cbxEstado.TabIndex = 4;
+            this.cbxEstado.SelectedIndexChanged += new System.EventHandler(this.cbxEstado_SelectedIndexChanged);
             // 
             // lblEstado
             // 
@@ -213,7 +187,7 @@ namespace NovoFormulário
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblEstado);
-            this.Controls.Add(this.cbEstados);
+            this.Controls.Add(this.cbxEstado);
             this.Controls.Add(this.mCPF);
             this.Controls.Add(this.lblCPF);
             this.Controls.Add(this.txtNomeCompleto);
@@ -235,7 +209,7 @@ namespace NovoFormulário
         private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.MaskedTextBox mCPF;
-        private System.Windows.Forms.ComboBox cbEstados;
+        private System.Windows.Forms.ComboBox cbxEstado;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton3;
